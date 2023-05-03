@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST Calculator</title>
+    <link rel="stylesheet" href="adi1.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <div class="logo"><a href="index.html"><img src="Calculator.png" height="100px" width="100px"></a></div>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="info.html">INFORMATION</a></li>
+                    <li><a href="adi.html">CALCULATOR</a></li>
+                    <li><a href="contactus.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    <div class="contain">
+        <section>
+            
+            <div class="card">
+                <div class="title">Product Price</div>
+                <input type="number" id="actual_price">
+            </div>
+            <div class="card">
+                <div class="title">Final Price</div>
+                <input type="number" id="final_price">
+            </div>
+            <div class="card-rate">
+                <div class="title">Rate</div>
+                <div class="group">
+                <button id="left"><</button>
+                <span id="gst_percent">3</span>
+                <span>%</span>
+                <button id="right">></button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="title">IGST</div>
+                <input type="number" id="gst_value" disabled />
+            </div>
+            <div class="card">
+                <div class="title">CGST</div>
+                <input type="number" id="cgst_value" disabled />
+            </div>
+            <div class="card">
+                <div class="title">SGST/UTGST</div>
+                <input type="number" id="sgst_value" disabled />
+            </div>
+    </section><hr>
+    <div class="hero">
+        <div class="part1-text">
+            <h3>Steps for Calculating GST using GST Calculator:</h3>
+            <p><ul style="list-style-type: square;">
+                <li>Enter Product Price of Item i.e. Exclusive GST<br> OR<br>Enter Final Price of Item i.e. Inclusive GST</li>
+                <li>Manage the rate according to your product you can refer Table from <a href="info.html">Information page</a>.</li>
+            </ul>
+            <i>That's all your GST is calculated.</i><br>Now if your sale is Interstate then Note down the value of IGST or if it is Intrastate then note down values of CGST and SGST/UTGST.
+            <br>For definition of Intrastate and Interstate you can refer <a href="info.html">Information Page</a>.
+            </p>
+            </div>
+
+            <br>
+        <div class="part1-text">
+        <h3>Formulae for GST Calculation:</h3>
+        <p>Anyone can calculate GST easily with the help of the following formula:<br>
+            Where GST is excluded:
+            GST Amount = (Value of supply x GST%)/100
+            Price to be charged = Value of supply + GST Amount<br>
+            Where GST is included in the value of supply:
+            GST Amount = Value of supply – [Value of supply x {100/(100+GST%)}]
+        </p>
+        </div>
+
+        
+    </div></div>
+    <footer class="footer">
+        <div class="footer-mai">
+            <div class="footer-row">
+                    <div class="footer-logo"><a href="index.html"><img src="Calculator1.png" height="100px" width="100px"></a></div>
+                </div>
+                <div class="footer-col">
+                    <ul class="footer-ul"> 
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms and condition</a></li>
+                        <li><a href="#">Knowledge Base</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-col">
+                    <ul class="footer-ul">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="info.html">INFORMATION</a></li>
+                        <li><a href="adi.html">CALCULATOR</a></li>
+                        <li><a href="contactus.html">CONTACT</a></li>
+                    </ul>
+                </div></div></footer>
+   
+    <script src="adi.js"></script>
+</body>
+</html>
